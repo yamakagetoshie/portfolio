@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  /*margin: 0 0 30px 0;*/
+}
+
+p {
+  margin-top: 20px;
+}
+
+#footer {
+  background: #006400;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-inline-start: -40px;
+}
+
+li {
+  list-style: none;
+}
+
+/*========= navigation ===============*/
+#g-navi {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+nav ul li.current a,
+nav ul li a:hover {
+  color: rgb(124, 122, 122);
+}
+
+.main-nav dl {
+  background: #006400;
+  color: #fff;
+  padding: 11px 40px;
+}
+
+.main-nav dl dt {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.main-nav dl a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#header {
+  /*以下はレイアウトのためのCSS*/
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: rgba(255, 255, 255, 1.0);
+  color: #000;
+}
+
+@media screen and (max-width: 767px) {
+
+  /* g-nav-pcクラスはナビゲーションを非表示にするためのクラス */
+  .g-nav-pc {
+    display: none;
+    /*767px以下では使用しない */
+  }
+}
+
+/*========= section ===============*/
+section {
+  padding: 30px;
+}
+
+section:nth-child(odd) {
+  background: rgba(216, 191, 216, 0.3);
+}
+
+/*========= about ===============*/
+/*button-borderクラスはbutton.cssに記載している*/
+.about-area {
+  writing-mode: vertical-rl;
+  margin: 10%;
+
+}
+
+.about-heding {
+  padding-left: 20px;
+}
+
+.about-desc {
+  padding-left: 20px;
+}
+
+.gallery-link {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*button-borderのレイアウトクラス*/
+.button-vertical {
+  padding: 100px 30px;
+}
+
+#about {
+  display: flex;
+  /*左右揃えのため*/
+  justify-content: center;
+  height: 80vh;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  /* ★横表記にするか要検討★ */
+  .about-area {
+    /*writing-mode: horizontal-tb;*/
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/*========= itemlist ===============*/
+/*縦書き見出しの設定　vertical-title*/
+.vertical-title {
+  display: flex;
+  /*左右揃えのため*/
+  justify-content: center;
+
+}
+
+.vertical-title h2 {
+  writing-mode: vertical-rl;
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+
+.itemlist-inner {
+  writing-mode: vertical-rl;
+  display: flex;
+  width: 100%;
+
+}
+
+.itemlist-inner-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+
+  /*display: grid;でもかける
+display: grid;
+width: 100%;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px 20px;
+*/
+}
+
+.itemlist-inner-list li {
+  height: 30%;
+  margin: 10px;
+}
+
+
+.itemlist-inner-items {}
+
+.itemlist-inner-link {}
+
+.itemlist-inner-text h3 {
+  margin-block-start: 0em;
+  padding-right: 1em;
+  color: #000;
+}
+
+.itemlist-inner-text p {
+  width: 10%;
+  /*文字数が増えたらここも修正*/
+  overflow-wrap: break-word;
+  color: #000;
+}
+
+.itemlist-inner-image img{
+  width: 290px;
+}
+
+.shop-link {
+  vertical-align: middle;
+  text-align: center;
+  margin: 30px 0;
+}
+
+/*button-borderのレイアウトクラス*/
+.button-horizontal {
+  padding: 30px 100px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .itemlist-inner {
+    writing-mode: horizontal-tb;
+    display: block;
+  }
+
+  .itemlist-inner-text p {
+    width: 100%;
+  }
+
+}
+
+/*========= access ===============*/
+
+.access-wrap {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 30px 0;
+  width: 100%;
+
+}
+
+.access-map {}
+
+.access-block {
+  background: #fff;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.access-address {}
+
+.access-text {}
+
+/*lineの全般的レイアウトクラス　line bordercircleクラスについてはline.cssに記載*/
+.access-detail {
+  text-align: center;
+  justify-content: center;
+  background: #fff;
+  margin: 0 16%;
+  padding: 2.5%;
+
+}
+
+.access-detail a {
+  color: #000;
+  font-size: 2.0rem;
+}
+
+@media screen and (max-width: 767px) {
+  .access-wrap {
+    display: block;
+  }
+
+  .access-map iframe {
+    width: 100%;
+
+  }
+
+  .access-block {
+    width: 100%;
+  }
+
+  .access-detail {
+    margin: 0;
+    background: rgba(216, 191, 216, 0.3);
+  }
+
+}
+
+/*========= footer ===============*/
+
+.footer_nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_nav ul li a {
+  padding: 30px 0;
+  margin-right: 20px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer_nav :last-child li {
+  border-right: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* 768pxまでの幅の場合に適応される */
+  .footer_nav {
+    display: block;
+    text-align: center;
+  }
+
+  .footer_nav ul {
+    width: 100%;
+  }
+
+  .footer_nav ul li {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+}

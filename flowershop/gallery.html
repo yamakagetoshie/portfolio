@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>フラワーショップ北都</title>
+    <meta name="description" content="フラワーショップ北都のサンプルサイトです">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--==============CSS読み込み===============-->
+    <!--normalizeCSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--mainCSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--navigationCSS-->
+    <link rel="stylesheet" href="css/navigation.css">
+    <!--hamburger_navCSS-->
+    <link rel="stylesheet" href="css/hamburger_nav.css">
+    <!--slideshowCSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+    <!--slideshowCSS-->
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <!--slideinCSS-->
+    <link rel="stylesheet" type="text/css" href="css/slidein.css">
+    <!--lineCSS-->
+    <link rel="stylesheet" type="text/css" href="css/line.css">
+    <!--pagetoplinkCSS-->
+    <link rel="stylesheet" type="text/css" href="css/pagetoplink.css">
+    <!--galleryCSS-->
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <!--modaalCSS-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" type="text/css" href="css/modaal.css">
+
+</head>
+
+<body>
+    <header id="header" class="main-nav">
+        <nav class="g-nav-pc">
+            <ul id="g-navi">
+                <li><a href="index.html#top">トップ</a></li>
+                <li><a href="index.html#about">お店について</a></li>
+                <!--gallery.htmlへリンク-->
+                <li><a href="gallery.html">作品例</a></li>
+                <li><a href="index.html#itemlist">取扱アイテム</a></li>
+                <li><a href="index.html#access">アクセス</a></li>
+            </ul>
+        </nav>
+        <dl class="g-nav-pc">
+            <!--オンラインショップがあれば、オンラインショップのリンクへ変更する-->
+            <dt>
+                ご注文・お問合せ<br>
+                <a href="tel:011-XXX-XXXX">011-XXX-XXXX</a>
+            </dt>
+        </dl>
+    </header>
+
+    <!-- 767px以下で使用するナビゲーション -->
+    <div class="openbtn1"><span></span><span></span><span></span></div>
+    <nav id="h-nav">
+        <ul>
+            <li><a href="index.html#top">トップ</a></li>
+            <li><a href="index.html#about">お店について</a></li>
+            <!--gallery.htmlへリンク-->
+            <li><a href="gallery.html">作品例</a></li>
+            <li><a href="index.html#itemlist">取扱アイテム</a></li>
+            <li><a href="index.html#access">アクセス</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="gallery">
+            <div class="wrapper">
+                <h1>作品例</h1>
+
+                <ul class="sort-btn">
+                    <li>
+                        <dl>
+                            <dt>All</dt>
+                            <dd>
+                                <ul>
+                                    <li class="all active">全て</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>色</dt>
+                            <dd>
+                                <ul>
+                                    <li class="use01">ホワイト系</li>
+                                    <li class="use02">レッド系</li>
+                                    <li class="use03">イエロー系</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>カテゴリー</dt>
+                            <dd>
+                                <ul>
+                                    <li class="cat01">花束</li>
+                                    <li class="cat02">アレンジメント</li>
+                                    <li class="cat03">スタンド</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <!--/sort-btn-->
+                </ul>
+
+                <ul class="grid">
+                    <li class="item cat01 use01 use02 use03">
+                        <div class="item-content">
+                            <a href="./image/87417L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/87417L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat02 use01 use02">
+                        <div class="item-content">
+                            <a href="./image/886506L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/886506L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat03 use02">
+                        <div class="item-content">
+                            <a href="./image/1166385L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/1166385L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat03 use01 use02 use03">
+                        <div class="item-content">
+                            <a href="./image/1342472L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/1342472L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat03 use02">
+                        <div class="item-content">
+                            <a href="./image/1562852L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/1562852L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat03 use03">
+                        <div class="item-content">
+                            <a href="./image/2644445L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/2644445L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat02 use02">
+                        <div class="item-content">
+                            <a href="./image/3744574L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/3744574L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat03 use03">
+                        <div class="item-content">
+                            <a href="./image/4883492L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/4883492L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat01 use01">
+                        <div class="item-content">
+                            <a href="./image/23836509L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/23836509L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat02 use02">
+                        <div class="item-content">
+                            <a href="./image/23865572L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/23865572L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat01 use03">
+                        <div class="item-content">
+                            <a href="./image/24057638L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/24057638L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat01 use03">
+                        <div class="item-content">
+                            <a href="./image/24116436L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/24116436L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat01 use02">
+                        <div class="item-content">
+                            <a href="./image/24135346L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/24135346L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat01 use03">
+                        <div class="item-content">
+                            <a href="./image/24243159L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/24243159L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat01 use02">
+                        <div class="item-content">
+                            <a href="./image/24350871L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/24350871L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="item cat01 use02">
+                        <div class="item-content">
+                            <a href="./image/24491884L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/24491884L.jpg"
+                                    alt=""></a>
+                        </div>
+                     <li class="item cat02 use02">
+                        <div class="item-content">
+                            <a href="./image/24569617L.jpg"
+                                class="gallery" data-group="gallery" data-caption="キャプション"><img
+                                    src="./image/24569617L.jpg"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p id="page-top"><a href="/">↑</a></p>
+
+        <div class="footer_nav">
+            <ul>
+                <li>
+                    <a href="index.html#top">トップ</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="index.html#about">お店について</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="gallery.html">作品例</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="index.html#itemlist">取扱アイテム</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="index.html#access">アクセス</a>
+                </li>
+            </ul>
+        </div>
+
+        <small>&copy; copyright. フラワーショップ北都 All Rights Reserved.</small>
+    </footer>
+
+    <!--==============JQuery読み込み===============-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--ナビゲーション上部固定-->
+    <script src="js/navigation.js"></script>
+    <!--hamburger_nav-->
+    <script src="js/hamburger_nav.js"></script>
+    <!--slideshow-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    <!--slidein-->
+    <script src="js/slidein.js"></script>
+    <!--pagetoplink-->
+    <script src="js/pagetoplink.js"></script>
+    <!--gallery-->
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="js/gallery.js"></script>
+    <!--modaal-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="js/modaal.js"></script>
+
+</body>
+
+</html>

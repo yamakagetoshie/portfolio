@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+#slider {
+    width: 50%;
+    height: 100vh;
+    /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+
+.top-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.top-shopname {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    #slider {
+        width: 100%;
+        height: 100vh;
+        /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    }
+
+    .top-shopname {
+        width: 100%;
+        top: 40%;
+        left: 0;
+        z-index: 99;
+    }
+}
