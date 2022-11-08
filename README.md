@@ -1,5 +1,5 @@
 # portfolio
 フォルダをデスクトップにダウンロードしてご確認ください。
 
-# サーバUP済portfolio
+# portfolio2
 https://shimettainu.sakura.ne.jp/gojyorei
